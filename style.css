@@ -1,0 +1,1200 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-block: 0;
+    margin: 0;
+}
+
+
+
+:root {
+    --color-txt: #F6F6F6;
+    --color: #272727;
+
+    --color-akcent: #FB61E3;
+
+    --color-border-line: #C8C7C8;
+    --color-border: #311752;
+
+    --color-background-block: rgb(17,3,33, 0.5);
+    --color-background-body: #1D0836;
+    --color-background: #FFFFFF;
+    
+    --ft-size-p-14: 0.9rem; /*14px*/
+    --ft-size-p-16: 1rem; /*16px*/
+    --ft-size-p-18: 1.13rem; /*18px*/
+    --ft-size-p-20: 1.3rem; /*20px*/
+    --ft-size-h1: 3.1rem; /*50px*/
+    --ft-size-h2: 2rem; /*34px*/
+
+    --ft-weight-regular: 400;
+    --ft-weight-medium: 500;
+    --ft-weight-semibold: 600;
+    --ft-weight-bold: 700;
+
+    --gradient-body-main: radial-gradient(35% 10% at 30% 9%, rgb(88 15 76 / 60%) 0%, rgb(88 15 76 / 50%) 38.54%, rgb(88 15 76 / 0%) 100%), radial-gradient(35% 7.5% at 80% 8.5%, rgb(88 15 76 / 30%) 0%, rgb(88 15 76 / 40%) 38.54%, rgb(88 15 76 / 0%) 100%), radial-gradient(11.5% 2.1% at 77% 16%, rgb(75 21 130 / 35%) 0%, rgb(75 21 130 / 0%) 270%, rgb(75 21 130 / 0%) 0%), radial-gradient(12% 1.5% at 50% 25%, rgb(75 21 130 / 80%) 0%, rgb(75 21 130 / 0%) 350%, rgb(75 21 130 / 0%) 0%), radial-gradient(11.5% 2.1% at 28% 33.5%, rgb(75 21 130 / 47%) 0%, rgb(75 21 130 / 0%) 270%, rgb(75 21 130 / 0%) 0%), radial-gradient(67% 8% at 50% 44%, rgb(88 15 76 / 70%) 0%, rgb(88 15 76 / 88%) 0%, rgb(88 15 76 / 0%) 92%), radial-gradient(11.5% 2.1% at 72% 76%, rgb(75 21 130 / 85%) 0%, rgb(75 21 130 / 0%) 270%, rgb(75 21 130 / 0%) 0%), radial-gradient(23.5% 2.1% at 31% 84%, rgb(75 21 130 / 67%) 0%, rgb(75 21 130 / 0%) 270%, rgb(75 21 130 / 0%) 0%), radial-gradient(55% 6% at 50% 96%, rgb(88 15 76 / 0%) 0%, rgb(88 15 76 / 73%) 0%, rgb(88 15 76 / 0%) 102%);
+
+    --gradient-body-services: radial-gradient(40% 14% at 30% 15.5%, rgb(88 15 76 / 60%) 0%, rgb(88 15 76 / 40%) 48.54%, rgb(88 15 76 / 0%) 100%), radial-gradient(31% 9.5% at 80% 15%, rgb(88 15 76 / 60%) 0%, rgb(88 15 76 / 50%) 38.54%, rgb(88 15 76 / 0%) 97%), radial-gradient(10.5% 3% at 80% 30%, rgb(75 21 130 / 30%) 100%, rgb(75 21 130 / 0%) 330%, rgb(75 21 130 / 0%) 0%), radial-gradient(11.5% 4.1% at 50% 43%, rgb(75 21 130 / 54%) 0%, rgb(75 21 130 / 0%) 270%, rgb(75 21 130 / 0%) 0%), radial-gradient(10.5% 3.1% at 50% 55%, rgb(75 21 130 / 45%) 0%, rgb(75 21 130 / 0%) 260%, rgb(75 21 130 / 0%) 0%), radial-gradient(11.5% 5.1% at 23% 66%, rgb(75 21 130 / 67%) 0%, rgb(75 21 130 / 0%) 300%, rgb(75 21 130 / 0%) 0%), radial-gradient(50% 18% at 50% 92%, rgb(88 15 76 / 0%) 0%, rgb(88 15 76 / 71%) 0%, rgb(88 15 76 / 0%) 100%);
+
+    --gradient-head: radial-gradient(40% 90% at 50% 50%, rgb(88 15 76 / 0%) 0%, rgb(88 15 76 / 58%) 0%, rgb(88 15 76 / 10%) 100%);
+    
+    --gradient-footer: radial-gradient(60% 120% at 50% 50%, rgb(88 15 76 / 0%) 0%, rgb(88 15 76 / 68%) 0%, rgb(88 15 76 / 5%) 95%);
+}
+
+
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url(fonts/Montserrat-Regular.ttf);
+    font-weight: var(--ft-weight-regular);
+}
+
+
+
+h1, h2, h3, h4, h5, h6, p, a, li {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color);
+}
+h1 {
+    margin: 100px auto 0;
+    font-size: var(--ft-size-h1);
+    width: 720px;
+    text-align: center;
+}
+h2 {
+    font-size: var(--ft-size-h2);
+    text-align: center;
+}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--ft-weight-semibold);
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+h2, h3, h4, h5, h6 {           
+    margin-top: 60px;
+}
+p, a {
+    font-size: var(--ft-size-p-16);
+    font-weight: var(--ft-weight-medium);
+    line-height: 1.4;
+}
+a {
+    text-decoration: none;
+    transition: .2s;
+}
+li {
+    margin-top: 5px;
+    font-weight: var(--ft-weight-semibold);
+}
+
+
+body.body-main {
+    background: var(--gradient-body-main);
+    background-color: var(--color-background-body);
+}
+body.body-services {
+    background: var(--gradient-body-services);
+    background-color: var(--color-background-body);
+}
+section.header {
+    background: var(--gradient-head);
+    background-color: var(--color-background-body);
+}
+section.footer {
+    background: var(--gradient-footer);
+    background-color: var(--color-background-body);
+}
+.top-item,
+.content-item,
+.bottom-item {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.page-item {
+    max-width: 1030px;
+}
+.page-item p {
+    margin: 20px 0;
+    font-weight: var(--ft-weight-semibold);
+}
+.img-block {
+    display: flex;
+}
+hr.wp-block-separator.has-alpha-channel-opacity {
+    margin-top: 60px;
+}
+
+/*Burger Menu - Tablet adn Mobile*/
+.tb-mob-menu-phone {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    align-items: center;
+}
+.burger-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+.burger {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+}
+.burger::before,
+.burger::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: var(--color-txt);
+}
+.burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 #fff;
+    transition: box-shadow .2s .15s, top .2s .15s, transform .2s;
+}
+.burger::after {
+    bottom: 0;
+    transition: bottom .2s .15s, transform .2s;
+}
+.burger-checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .2s, transform .2s .15s;
+}
+.burger-checkbox:checked + .burger::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom .2s, transform .2s .15s;
+}
+.tablet-mobile-menu .menu-list {
+    top: 71px;
+    right: 0;
+    position: absolute;
+    display: grid;
+    gap: 12px;
+    padding: 10px 0;
+    margin: 0;
+    background: var(--color-background-body);
+    list-style-type: none;
+    transform: translateX(100%);
+    transition: .3s;
+    width: 300px;
+}
+.tablet-mobile-menu .menu-list a.menu-item {
+    display: block;
+    padding: 10px;
+    color: var(--color-txt);
+    font-size: var(--ft-size-p-16);
+    text-align: center;
+    text-decoration: none;
+}
+.tablet-mobile-menu .menu-list a.menu-item:hover {
+    background: rgba(255,255,255,.2)
+}
+.menu-razdel {
+    width: 270px;
+    margin: 0 auto;
+    border: 1px solid var(--color-border);
+}
+.burger-checkbox:checked ~ .menu-list {
+    transform: translateX(0);
+}
+/*END Burger Menu - Tablet adn Mobile*/
+
+/*Section Header Main Services*/
+.top-item {
+    border-bottom: 1px solid var(--color-border-line);
+    padding: 20px 10px;
+    margin: 0 auto;
+}
+.header .top-item {border: 0;}
+nav.top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+nav.top-menu .logo {
+    background-image: url('img/logo.webp');
+    width: 120px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+nav.top-menu .logo a {
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+ul.menu-list {
+    display: flex;
+    gap: 20px;
+    width: fit-content;
+    align-items: flex-start;
+    text-align: center;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.menu-list li {
+    list-style: none;
+}
+.menu-list a.menu-item,
+.head-phone a {
+    color: var(--color-txt);
+}
+.menu-list a.menu-item:hover,
+.head-phone a:hover {
+    color: var(--color-akcent);
+}
+.head-phone a {
+    font-weight: var(--ft-weight-semibold);
+}
+/*END Section Header Main Services*/
+
+
+
+/*Section Content*/
+/*Лапа добра*/
+.lapa-dobra {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    padding-top: 20px;
+}
+.lapa-dobra .logo-lapa {
+    background-image: url('img/lapa-dobra.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 55px;
+    height: 54px;
+}
+.lapa-dobra p {
+    font-size: var(--ft-size-p-14);
+    color: var(--color-txt);
+    max-width: 480px;
+}
+/*END Лапа добра*/
+
+
+/*Заголовок H1, картинка*/
+.title-img {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+}
+.title-img h1 {
+    color: var(--color-txt);
+    width: 715px;
+    margin: 0;
+    text-align: left;
+}
+/*.main-page .img-block {
+    background-image: url('img/sovremennyye-resheniya.webp');
+}*/
+/*.services-page .img-block  {
+    background-image: url('img/professionalnyye-konsultatsii.webp');
+}*/
+/*.main-page .img-block, 
+.services-page .img-block {
+    width: 500px;
+    height: 315px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}*/
+.main-page .img-block img,
+.services-page .img-block img {
+    width: -webkit-fill-available;
+    height: 100%;
+    border-radius: 20px;
+}
+.main-page .img-block img {
+    max-width: 55vh;
+}
+.services-page .img-block img {
+    max-width: 60vh;
+}
+/*END Заголовок H1, картинка*/
+
+
+/*О компании кратко,
+Об услугах кратко*/
+.company-desc,
+.services-desc {
+    display: flex;
+    align-items: center;
+    max-width: 1030px;
+    margin: 160px auto 0;
+}
+.services-desc {
+    gap: 20px;
+}
+.company-desc h2,
+.company-desc p,
+.services-desc p {
+    color: var(--color-txt);
+}
+.company-desc h2 {
+    font-weight: var(--ft-weight-medium);
+    margin: 0;
+    text-align: left;
+}
+.company-desc p {
+    max-width: 510px;
+    font-size: var(--ft-size-p-18);
+}
+.services-desc .ds-item {
+    width: 505px;
+    padding: 20px;
+    background: var(--color-background-block);
+    border: 1px solid var(--color-border);
+    font-size: var(--ft-size-p-18);
+    text-align: center;
+    border-radius: 20px;
+}
+/*END О компании кратко,
+Об услугах кратко*/
+
+
+/*Преимущества на Главной, 1 блок,
+Этапы протезирования*/
+.advantages-one-main,
+.prosthetics-stages {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1030px;
+    margin: 160px auto 0;
+    background: var(--color-background-block);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: 40px;
+}
+.advantages-one-main p,
+.prosthetics-stages p {
+    color: var(--color-txt);
+}
+p.adv-title,
+.prosthetics-stages h2 {
+    font-size: var(--ft-size-h2);
+}
+.adv-title span,
+.prosthetics-stages h2,
+.prosthetics-stages p.strong {
+    color: var(--color-akcent);
+}
+.prosthetics-stages h2 {
+    margin: 0;
+    text-align: left;
+}
+.adv-one-block,
+.pr-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.adv-one-item p.bf-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    font-size: var(--ft-size-p-18);
+}
+.adv-one-item:nth-child(1) p.bf-icon::before,
+.adv-one-item:nth-child(2) p.bf-icon::before,
+.adv-one-item:nth-child(3) p.bf-icon::before {
+    width: 50px;
+}
+.adv-one-item:nth-child(1) p.bf-icon::before {
+    content: url(img/video-konferentsiya.svg);
+}
+.adv-one-item:nth-child(2) p.bf-icon::before {
+    content: url(img/konsultatsiya.svg);
+}
+.adv-one-item:nth-child(3) p.bf-icon::before {
+    content: url(img/programma.svg);
+}
+p.adv-desc {
+    color: var(--color-akcent);
+    font-size: var(--ft-size-p-18);
+}
+.pr-item {
+    display: flex;
+    gap: 20px;
+}
+.pr-item::before {
+    content: url('img/shield.svg');
+}
+.pr-txt-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.prosthetics-stages p.strong {
+    font-size: var(--ft-size-p-20);
+    font-weight: var(--ft-weight-semibold);
+}
+/*END Преимущества на Главной, 1 блок,
+Этапы протезирования*/
+
+
+/*Забота о комфорте*/
+.comfort {
+    margin-top: 160px;
+}
+.comfort h2 {
+    color: var(--color-txt);
+    width: 800px;
+    text-align: left;
+}
+span.cm-akcent {
+    color: var(--color-akcent);
+}
+.cm-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.cm-block .cm-item {
+    background: var(--color-background);
+    padding: 30px 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+}
+.cm-block .cm-item p {
+    font-size: var(--ft-size-p-18);
+}
+.cm-block .cm-item span.cm-txt {
+    font-weight: var(--ft-weight-bold);
+}
+/*END Забота о комфорте*/
+
+
+/*Работа по стране*/
+.location {
+    display: flex;
+    align-items: center;
+    margin: 140px 0;
+    justify-content: center;
+    gap: 40px;
+}
+.location h2 {
+    color: var(--color-txt);
+    font-weight: var(--ft-weight-medium);
+    text-align: left;
+}
+.location .img-block {
+    background-image: url('img/map.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 480px;
+    height: 280px;
+}
+/*END Работа по стране*/
+
+
+/*Особенности, 4 блока*/
+.peculiarity .pc-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+.pc-block .pc-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    background: var(--color-background);
+    border-radius: 20px;
+}
+.pc-block .pc-item img {
+    border-radius: 20px;
+}
+.pc-item:nth-child(1) .img-block,
+.pc-item:nth-child(2) .img-block,
+.pc-item:nth-child(3) .img-block,
+.pc-item:nth-child(4) .img-block {
+    width: 600px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+.pc-item:nth-child(1) .img-block {
+    background-image: url('img/oborudovaniye.webp');
+}
+.pc-item:nth-child(2) .img-block {
+    background-image: url('img/reabilitatsiya.webp');
+}
+.pc-item:nth-child(3) .img-block {
+    background-image: url('img/innovatsii.webp');
+}
+.pc-item:nth-child(4) .img-block {
+    background-image: url('img/detskiye-protezy.webp');
+}
+
+.pc-block .pc-item .pc-block-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.pc-block-txt p.pc-title {
+    font-size: var(--ft-size-p-20);
+    font-weight: var(--ft-weight-semibold);
+}
+/*END Особенности, 4 блока*/
+
+
+/*Преимущества на Главной, 2 блок*/
+.advantages-two-main {
+    max-width: 1030px;
+    margin: 160px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 20px;
+    background: var(--color-background-block);
+    border-radius: 20px;
+    border: 1px solid var(--color-border);
+}
+.advantages-two-main .img-block {
+    background-image: url('img/preimushchestva-main.webp');
+    width: 100%;
+    max-width: 400px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.adv-two-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.adv-txt-column::before {
+    content: url('img/preimushchestva-like.svg');
+    width: 35px;
+}
+.adv-txt-column {
+    display: flex;
+    gap: 15px;
+}
+.icon-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.adv-txt-column p.strong {
+    color: var(--color-akcent);
+    font-size: var(--ft-size-p-20);
+}
+.adv-txt-column p {
+    color: var(--color-txt);
+}
+/*END Преимущества на Главной, 2 блок*/
+
+
+/*Этапы заказа,
+Преимущества, Услуги*/
+.order-stages,
+.advantages-services {
+    margin-top: 160px;
+}
+.order-stages h2,
+.advantages-services h2  {
+    color: var(--color-txt);
+    text-align: left;
+}
+.order-stages .or-block,
+.advantages-services .adv-serv-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+.or-block .or-item,
+.adv-serv-block .adv-sv-item {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    background: var(--color-background);
+    border-radius: 20px;
+    padding: 20px;
+}
+.or-item:nth-child(1)::before {
+    content: url(img/chat.svg);
+}
+.or-item:nth-child(2)::before {
+    content: url(img/order.svg);
+}
+.or-item:nth-child(3)::before {
+    content: url(img/delivery.svg);
+}
+.or-item:nth-child(4)::before {
+    content: url(img/box.svg);
+}
+.or-txt-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.or-txt-column p.strong {
+    font-size: var(--ft-size-p-20);
+    font-weight: var(--ft-weight-semibold);
+}
+.adv-sv-item .bf-icon::before {
+    content: url('img/license.svg');
+}
+.adv-serv-block .bf-icon {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: var(--ft-size-p-18);
+}
+/*END Этапы заказа,
+Преимущества, Услуги*/
+/*END Section Content*/
+
+
+/*Section Footer Main Services*/
+.bottom-item {
+    padding-top: 140px;
+}
+.footer .bottom-item {
+    padding: 0 10px;
+    margin-top: 140px;
+}
+nav.bottom-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--color-border-line);
+}
+nav.bottom-menu ul.menu-list {
+    margin: 0;
+    padding: 0;
+}
+.foot-contacts {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.foot-contacts a {
+    color: var(--color-txt);
+    font-size: var(--ft-size-p-18);
+    font-weight: var(--ft-weight-semibold);
+}
+.ft-block-columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.ft-block-columns p {
+    color: var(--color-txt); 
+}
+.ft-block-columns p,
+.ft-block-columns a {
+    font-size: var(--ft-size-p-14);
+}
+.copyrights,
+.details,
+.partner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.copyrights a.cp-link-webmaster,
+.copyrights a.cp-link:hover {
+    color: var(--color-txt);
+}
+.copyrights a.cp-link-webmaster:hover,
+.copyrights a.cp-link {
+    color: var(--color-akcent);
+}
+.partner {
+    width: 295px;
+    text-align: center;
+}
+.partner .logo {
+    background-image: url('img/scoliologic.svg');
+    width: 295px;
+    height: 63px;
+}
+/*END Section Footer Main Services*/
+
+/*Media WordPress
+Descktop Min - 1000px
+Laptop - 999-782px
+Mobile - 781-360px*/
+
+@media screen and (max-width: 1239px) {
+    .top-menu ul.menu-list {
+        gap: 10px;
+    }
+    .menu-list a.menu-item, 
+    .head-phone a {
+        font-size: var(--ft-size-p-14);
+    }
+
+
+    .comfort .cm-block {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .cm-block .cm-item {
+        max-width: 380px;
+        width: 100%;
+    }
+
+
+    .peculiarity .pc-block,
+    .order-stages .or-block, 
+    .advantages-services .adv-serv-block {
+        gap: 10px;
+        justify-content: center;
+    }
+
+
+    .services-desc {
+        gap: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 1229px) {
+    .services-page .img-block img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .peculiarity .pc-block, 
+    .order-stages .or-block, 
+    .advantages-services .adv-serv-block {
+        gap: 10px;
+        justify-content: center;
+    }
+    .pc-block .pc-item,
+    .or-block .or-item, 
+    .adv-serv-block .adv-sv-item {
+        max-width: 450px;
+        margin: 0;
+    }
+    .pc-item:nth-child(1) .img-block, 
+    .pc-item:nth-child(2) .img-block, 
+    .pc-item:nth-child(3) .img-block, 
+    .pc-item:nth-child(4) .img-block {
+        max-width: 450px;
+    }
+
+
+    .order-stages h2, 
+    .advantages-services h2 {
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (min-width: 1000px) {
+    .tablet-mobile-menu {
+        display: none;
+    }    
+}
+
+
+
+@media screen and (max-width: 999px) {
+    /*Включается мобильное меню, выключается десктопное*/
+    .menu-list.only-desktop-menu {
+        display: none;
+    }
+    .tablet-mobile-menu {
+        display: block;
+    }
+    .top-item {
+        position: fixed;
+        background: var(--color-background-body);
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0 10px 30px rgb(17 3 33 / 40%);
+    }
+    .content-item {
+        padding-top: 70px;
+    }
+
+    .title-img {
+        gap: 30px;
+    }
+    .title-img h1 {
+        max-width: 530px;
+        width: 100%;
+    }
+
+
+    .location {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+    .location h2 {
+        text-align: center;
+        margin-top: 0;
+    }
+
+
+    .company-desc, 
+    .services-desc {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .company-desc {
+        align-items: flex-start;
+    }
+    .company-desc p {
+        max-width: 100%;
+    }
+
+
+    .services-desc {
+        gap: 10px;
+    }
+    .services-desc .ds-item {
+        width: 100%;
+        text-align: left;
+    }
+
+
+    nav.bottom-menu {
+        align-items: baseline;
+    }
+    nav.bottom-menu ul.menu-list {
+        gap: 10px;
+        padding: 0;
+    }
+
+
+    .foot-contacts {
+        gap: 10px;
+    }
+    .foot-contacts a {
+        font-size: var(--ft-size-p-16);
+    }
+}
+
+
+
+@media screen and (max-width: 929px) {
+    .title-img {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .title-img h1 {
+        max-width: 900px;
+    }
+    .main-page .img-block, .services-page .img-block {
+        max-width: 500px;
+        width: 100%;
+    }
+
+
+    .comfort h2 {
+        width: 100%;
+    }
+
+
+    .peculiarity .pc-block {
+        gap: 40px;
+    }
+    .pc-block .pc-item, 
+    .or-block .or-item, 
+    .adv-serv-block .adv-sv-item {
+        max-width: 680px;
+        width: 100%;
+    }
+    
+
+
+    .pc-item:nth-child(1) .img-block, 
+    .pc-item:nth-child(2) .img-block, 
+    .pc-item:nth-child(3) .img-block, 
+    .pc-item:nth-child(4) .img-block {
+        max-width: 680px;
+        width: 100%;
+        height: 350px;
+    }
+
+
+    .advantages-one-main, .prosthetics-stages {
+        max-width: 900px;
+    }
+
+
+    .advantages-two-main {
+        flex-direction: column;
+        gap: 20px;
+        max-width: 680px;
+    }
+    .advantages-two-main .img-block {
+        max-width: 100%;
+    }
+
+
+    .order-stages h2, 
+    .advantages-services h2 {
+        max-width: 680px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+@media screen and (max-width: 911px) {
+    nav.bottom-menu {
+        justify-content: flex-start;
+        gap: 60px;
+    }
+    nav.bottom-menu ul.menu-list,
+    .foot-contacts {
+        flex-direction: column;
+        text-align: left;
+    }
+    .foot-contacts {
+        align-items: flex-start;
+        margin-left: 250px;
+    }
+
+
+    .ft-block-columns {
+        flex-wrap: wrap;
+        max-width: 900px;
+        margin: 0 auto;
+        gap: 60px;
+        justify-content: flex-start;
+    }
+
+
+    .details {
+        margin-left: 100px;
+    }
+    .partner {
+        text-align: left;
+    }
+}
+
+
+
+@media screen and (max-width: 829px) {
+    .cm-block .cm-item {
+        max-width: 360px;
+        width: 100%;    
+    }
+}
+
+
+
+@media screen and (max-width: 781px) {
+    h1 {
+        width: 100%;
+    } 
+
+
+    .main-page .img-block, 
+    .services-page .img-block,
+    .main-page .img-block img, 
+    .services-page .img-block img {
+        max-width: 100%;
+    }
+
+
+    .comfort h2 {
+        width: 100%;
+    }
+    .comfort .cm-block {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .cm-block .cm-item {
+        max-width: 100%;
+        text-align: left;
+        padding: 20px;
+    }
+
+
+    .order-stages h2, 
+    .advantages-services h2 {
+        max-width: 100%;
+        text-align: left;
+    }
+    .pc-block .pc-item, 
+    .or-block .or-item, 
+    .adv-serv-block .adv-sv-item {
+        max-width: 100%;
+    }
+    .pc-item:nth-child(1) .img-block, 
+    .pc-item:nth-child(2) .img-block, 
+    .pc-item:nth-child(3) .img-block, 
+    .pc-item:nth-child(4) .img-block {
+        max-width: 100%;
+        height: 45vh;
+    }
+
+
+    .advantages-two-main {
+        max-width: 100%;
+    }
+    .advantages-two-main .img-block {
+        max-width: 100%;
+        height: 40vh;
+    }
+}
+
+
+
+@media screen and (max-width: 656px) {
+    .foot-contacts {
+        margin-left: 150px;
+    }
+
+
+    .details {
+        margin-left: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 556px) {
+    .title-img,
+    .title-img h1 {
+        max-width: 100%;
+    }
+    .title-img h1 {
+        font-size: 3em;
+    }
+
+
+    nav.bottom-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    .foot-contacts {
+        margin: 0;
+    }
+
+    .ft-block-columns {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 486px) {
+    .title-img h1 {
+        font-size: 2.5em;
+    }
+
+
+    .advantages-one-main {
+        text-align: center;
+    }
+    .advantages-one-main, 
+    .prosthetics-stages {
+        padding: 20px;
+    }
+    .adv-one-item p.bf-icon {
+        flex-direction: column;
+    }
+
+
+    .pc-item:nth-child(1) .img-block, 
+    .pc-item:nth-child(2) .img-block, 
+    .pc-item:nth-child(3) .img-block, 
+    .pc-item:nth-child(4) .img-block {
+        height: 30vh;
+    }
+
+
+    .advantages-two-main .img-block {
+        height: 30vh;
+    }
+    .adv-txt-column::before {
+        margin: 0 auto;
+    }
+    .adv-txt-column {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .pc-block .pc-item, 
+    .or-block .or-item, 
+    .adv-serv-block .adv-sv-item {
+        flex-direction: column;
+    }
+
+    .prosthetics-stages,
+    .prosthetics-stages h2 {
+        text-align: center;
+    }
+    .pr-block .pr-item {
+        flex-direction: column;
+        /* text-align: center; */
+    }
+}
+
+
+@media screen and (max-width: 486px) {
+    .title-img h1, h1 {
+        font-size: 2em;
+    }
+}
