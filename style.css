@@ -1139,8 +1139,8 @@ Mobile - 781-360px*/
 
 
 @media screen and (max-width: 486px) {
-    .title-img h1 {
-        font-size: 2.5em;
+    .title-img h1, h1 {
+        font-size: 2em;
     }
 
 
@@ -1189,12 +1189,5 @@ Mobile - 781-360px*/
     .pr-block .pr-item {
         flex-direction: column;
         /* text-align: center; */
-    }
-}
-
-
-@media screen and (max-width: 486px) {
-    .title-img h1, h1 {
-        font-size: 2em;
     }
 }
